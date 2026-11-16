@@ -1,0 +1,492 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f6f2;
+    color: #222;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+header h2 {
+    color: #d4af37;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #111;
+    text-align: center;
+    padding: 18px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin: 35px 10px;
+    color: #222;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 10px;
+    color: #222;
+}
+
+.hero {
+    background: linear-gradient(120deg, #222, #555);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    color: #d4af37;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: #d4af37;
+    color: black;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero a:hover {
+    background-color: white;
+}
+
+.gallery,
+.gallery-shoes,
+.women,
+.men {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px;
+}
+
+.gallery img,
+.gallery-shoes img,
+.women img,
+.men img {
+    width: 230px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover,
+.gallery-shoes img:hover,
+.women img:hover,
+.men img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.image-container {
+    text-align: center;
+    padding: 30px;
+}
+
+.image-container img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box {
+    background-color: white;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 35px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h1 {
+    color: #b18b20;
+}
+
+.contact-box h2 {
+    color: #b18b20;
+    margin: 20px 0 8px;
+}
+
+.contact-box p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    color: #d4af37;
+}
+
+footer p {
+    margin: 10px;
+    font-size: 15px;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 10px 8px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .gallery img,
+    .gallery-shoes img,
+    .women img,
+    .men img {
+        width: 90%;
+        height: 280px;
+    }
+
+    .contact-box {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f6f2;
+    color: #222;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+header h2 {
+    color: #d4af37;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #111;
+    text-align: center;
+    padding: 18px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin: 35px 10px;
+    color: #222;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 10px;
+    color: #222;
+}
+
+.hero {
+    background: linear-gradient(120deg, #222, #555);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    color: #d4af37;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: #d4af37;
+    color: black;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero a:hover {
+    background-color: white;
+}
+
+.gallery,
+.gallery-shoes,
+.women,
+.men {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px;
+}
+
+.gallery img,
+.gallery-shoes img,
+.women img,
+.men img {
+    width: 230px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover,
+.gallery-shoes img:hover,
+.women img:hover,
+.men img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.image-container {
+    text-align: center;
+    padding: 30px;
+}
+
+.image-container img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box {
+    background-color: white;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 35px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h1 {
+    color: #b18b20;
+}
+
+.contact-box h2 {
+    color: #b18b20;
+    margin: 20px 0 8px;
+}
+
+.contact-box p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    color: #d4af37;
+}
+
+footer p {
+    margin: 10px;
+    font-size: 15px;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 10px 8px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .gallery img,
+    .gallery-shoes img,
+    .women img,
+    .men img {
+        width: 90%;
+        height: 280px;
+    }
+
+    .contact-box {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    filter: blur(rgba(0, 0, 0, 0.358));
+}
+
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+.p1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color:white;
+}
+
+.p2 {
+    font-size: 20px;
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.image-text a {
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+    background: black;
+    color: green;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.image-text a:hover {
+    background: #c59d5f;
+}
+
